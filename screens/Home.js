@@ -175,6 +175,7 @@ const Home = () => {
         {() => (
           <ScreenTab
             items={getItemsByCategory("Juice")}
+            allIems={foodItems}
             setItems={setFoodItems}
             category={"Juice"}
           />
@@ -204,6 +205,7 @@ const Home = () => {
           <ScreenTab
             items={getItemsByCategory("Bakery")}
             setItems={setFoodItems}
+            allIems={foodItems}
             category={"Bakery"}
           />
         )}

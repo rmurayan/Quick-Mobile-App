@@ -36,7 +36,7 @@ const ScreenTab = ({ items, setItems,allIems,category }) => {
         quantity: quantity || editQuantity,
         category: category
       };
-      const itemExists = allIems.some((item) => item.name === newItem.name);
+      const itemExists = allIems?.some((item) => item.name === newItem.name);
       if (itemExists && editItemIndex == null) {
         Alert.alert(
           "Item existed",
